@@ -65,10 +65,14 @@ op = int(input("\nAgora escolha uma opção abaixo:\n1. Adicionar Item\n2. Remov
 
 match op:
     case 1:
-        print(number + 1)
+        number += 1
+        print(number)
     case 2:
-        print(number - 1)
+        number -= 1
+        print(number)
     case 3:
         print("I " * int(number))
     case 4:
-        print("Saindo")
+        pass
+    case _:
+        print("Opção inválida.")
